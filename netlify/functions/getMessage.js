@@ -40,8 +40,8 @@ exports.handler = async function (event, context) {
                     - Include 2-4 romantic emojis
                     - 150-250 words maximum`
                 }],
-                max_tokens: 600,
-                temperature: 0.85,
+                max_tokens: 1000000,
+                temperature: 0.7,
                 stop: ["END"]
             }),
         });
