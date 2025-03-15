@@ -7,9 +7,9 @@ exports.handler = async function (event, context) {
 
         // Available models array
         const models = [
-            "google/gemini-2.0-flash-thinking-exp:free",
             "google/gemini-2.0-pro-exp-02-05:free",
-            "nvidia/llama-3.1-nemotron-70b-instruct:free"
+			"deepseek/deepseek-r1-zero:free",
+			"openai/gpt-4o-2024-11-20"
         ];
 
         // Random model selection
