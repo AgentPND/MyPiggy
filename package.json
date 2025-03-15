@@ -1,0 +1,8 @@
+{
+  "name": "for-my-love-website",
+  "version": "1.0.0",
+  "dependencies": {
+    "@google/generative-ai": "^0.5.0",
+    "node-fetch": "^2.6.7"
+  }
+}

@@ -1,0 +1,147 @@
+/* Import Fun & Romantic Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff0f5; /* Sakura pink background */
+    color: #4a4a4a;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+header {
+    background-color: #c71585; /* Crimson red header */
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid #ff69b4; /* Hot pink border */
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+button {
+    background-color: #ff69b4; /* Hot pink buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c71585; /* Crimson red on hover */
+}
+
+#post-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.post {
+    background-color: #fff0f5; /* Sakura pink post background */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    color: #c71585; /* Crimson red heading */
+}
+
+/* Floating Hearts */
+.floating-heart {
+    position: fixed;
+    bottom: 0;
+    font-size: 28px;
+    opacity: 0.8;
+    animation: floatUp 5s ease-in-out forwards;
+    color: #ff69b4; /* Hot pink hearts */
+    z-index: 1000;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* Scrollable Saved Messages */
+#saved-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+#saved-content {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+#close-saved {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #c71585; /* Crimson red close button */
+}
+
+/* Mobile Fix */
+@media (max-width: 600px) {
+    header {
+        padding-top: 60px;
+    }
+
+    #saved-container {
+        top: 15%;
+        width: 90%;
+    }
+
+    .top-left-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+        position: relative;
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #saved-content {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}
