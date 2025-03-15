@@ -1,12 +1,10 @@
-/* Import Fun & Romantic Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
-/* General Styles */
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: #fff0f5; /* Sakura pink background */
+    background-color: #fff0f5;
     color: #4a4a4a;
     text-align: center;
     margin: 0;
@@ -15,10 +13,10 @@ body {
 }
 
 header {
-    background-color: #c71585; /* Crimson red header */
+    background-color: #c71585;
     color: white;
     padding: 20px;
-    border-bottom: 5px solid #ff69b4; /* Hot pink border */
+    border-bottom: 5px solid #ff69b4;
 }
 
 header h1 {
@@ -27,13 +25,8 @@ header h1 {
     margin: 0;
 }
 
-header p {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
 button {
-    background-color: #ff69b4; /* Hot pink buttons */
+    background-color: #ff69b4;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -44,7 +37,7 @@ button {
 }
 
 button:hover {
-    background-color: #c71585; /* Crimson red on hover */
+    background-color: #c71585;
 }
 
 #post-container {
@@ -57,7 +50,7 @@ button:hover {
 }
 
 .post {
-    background-color: #fff0f5; /* Sakura pink post background */
+    background-color: #fff0f5;
     padding: 15px;
     margin: 15px 0;
     border-radius: 10px;
@@ -65,32 +58,24 @@ button:hover {
 }
 
 .post h3 {
-    color: #c71585; /* Crimson red heading */
+    color: #c71585;
 }
 
-/* Floating Hearts */
 .floating-heart {
     position: fixed;
     bottom: 0;
     font-size: 28px;
     opacity: 0.8;
     animation: floatUp 5s ease-in-out forwards;
-    color: #ff69b4; /* Hot pink hearts */
+    color: #ff69b4;
     z-index: 1000;
 }
 
 @keyframes floatUp {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-100vh);
-        opacity: 0;
-    }
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100vh); opacity: 0; }
 }
 
-/* Scrollable Saved Messages */
 #saved-container {
     display: none;
     position: fixed;
@@ -111,37 +96,12 @@ button:hover {
     text-align: left;
 }
 
-#close-saved {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: #c71585; /* Crimson red close button */
-}
-
-/* Mobile Fix */
 @media (max-width: 600px) {
     header {
         padding-top: 60px;
     }
-
     #saved-container {
         top: 15%;
         width: 90%;
-    }
-
-    .top-left-button {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-        position: relative;
-        display: block;
-        margin: 10px auto;
-        text-align: center;
-    }
-
-    #saved-content {
-        max-height: 300px;
-        overflow-y: auto;
     }
 }
