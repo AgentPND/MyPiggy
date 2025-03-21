@@ -7,8 +7,6 @@ exports.handler = async function (event, context) {
 
         const models = [
             "google/gemini-2.0-pro-exp-02-05:free",
-            "deepseek/deepseek-r1-zero:free",
-            "deepseek/deepseek-chat:free"
         ];
 
         const selectedModel = models[Math.floor(Math.random() * models.length)];
